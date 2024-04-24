@@ -2,7 +2,6 @@
 Tracking System using Tiva c and GPS to get the Coordinates and Save them in SD card<br>
 these Coordinates can be displayed on PC using python script in the project or Google earth<br>
 * For More details [Project Description] (https://github.com/Mohamed-Ashraf0/Project-Description/blob/main/Project%20(1).pdf) 
-                   [check the report]  ()
 * Video of the Project [link]()
 
 
@@ -10,8 +9,6 @@ these Coordinates can be displayed on PC using python script in the project or G
 ## The project is implemented using the following hardware:
 * Tiva-c
 * NEO6 GPS Module  
-* SD-card Module
-* SD-card
 * LCD
 
 
