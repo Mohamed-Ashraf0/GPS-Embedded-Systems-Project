@@ -36,9 +36,8 @@ Tracking System using Tiva c and GPS to get the Coordinates.
 - 3ashor   
 
  #### Bit_Utilies:
-- 3ashor
+- hussam
   
  #### NVICs:
 - yahya
-- hussam
             
