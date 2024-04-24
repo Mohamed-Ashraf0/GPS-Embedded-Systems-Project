@@ -1,5 +1,5 @@
 # GPS-Embedded-Systems-Project
-Tracking System using Tiva c and GPS to get the Coordinates
+Tracking System using Tiva c and GPS to get the Coordinates.
 * For More details:-
 *  [check Project Description](https://github.com/Mohamed-Ashraf0/Project-Description/blob/main/Project%20(1).pdf)
 * [check Project Report]()
