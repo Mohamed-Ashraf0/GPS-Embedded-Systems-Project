@@ -19,6 +19,7 @@ double currentLat=0 ,currentLong=0 ,speed=0;
 double degToRad(double degree) {
     return degree * (3.14159265358979323846 / 180.0);
 }
+
 double GPS_getDistance(double currentLat,double currentLong,double previousLat,double previousLong){
     double lat1 = degToRad(currentLat);
     double long1 = degToRad(currentLong);
@@ -69,7 +70,7 @@ void GPS_read (){
      if(speed==0.0){continue;}
      currentLat = strtofloat(Lat);
     currentLong = strtofloat(longi);
-		 if(currentLat>0 && currentLong>0){break;}
+    if(currentLat>0 && currentLong>0){break;}
      }
   }
 }
