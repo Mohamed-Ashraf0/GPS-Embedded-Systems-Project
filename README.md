@@ -9,7 +9,4 @@ these Coordinates can be displayed on PC using python script in the project or G
 ## The project is implemented using the following hardware:
 * Tiva-c
 * NEO6 GPS Module  
-* LCD
 
-
-## Main Flow
