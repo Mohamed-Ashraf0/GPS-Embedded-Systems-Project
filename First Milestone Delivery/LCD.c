@@ -64,14 +64,14 @@ else {CLR_BIT(GPIO_PORTA_DATA_R,PB1);}
 if (GET_BIT(data,7) == 1){SET_BIT(GPIO_PORTB_DATA_R,PB0);}
 else {CLR_BIT(GPIO_PORTA_DATA_R,PB0);}
 }
-void LCD_String_First_line (uint8_t* str , uint8_t len){
+void LCD_String_First_line (char* str , uint8_t len){
 					char i ;			
 	for ( i = 0; i<len ; ++i){
 										LCD_CMD(0x80);
 									  LCD_Data(str[i]);
 									}
 }
-void LCD_String_Second_line (uint8_t* str , uint8_t len){
+void LCD_String_Second_line (char* str , uint8_t len){
 	char i ;								
 	for ( i = 0; i<len ; ++i){
 										LCD_CMD(0xC0);

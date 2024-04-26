@@ -1,4 +1,4 @@
-#include "tm4c123gh6pm.h"
+#include "TM4C123.h"
 #include "DIO.h"
 enum port {A=1,B=2,C=4,D=8,E=16,F=32};
 typedef enum port type;

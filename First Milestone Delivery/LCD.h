@@ -12,8 +12,8 @@
 void Print_Data(uint8_t data);
 void LCD_Data (uint8_t data);
 void LCD_CMD (uint8_t data);
-void LCD_String_First_line (uint8_t* str , uint8_t len);
-void LCD_String_Second_line (uint8_t* str , uint8_t len);
+void LCD_String_First_line (char* str , uint8_t len);
+void LCD_String_Second_line (char* str , uint8_t len);
 void LCD_Init (void);
 
 #endif

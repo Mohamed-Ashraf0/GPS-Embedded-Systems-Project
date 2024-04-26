@@ -4,7 +4,7 @@
 */
 #ifndef DIO.h
 #define DIO.h
-#include "tm4c123gh6pm.h"
+#include "TM4C123.h"
 void enableClock(type port);
 //takes values (A --> F) to enable clock for their ports
 void enableLEDs();
