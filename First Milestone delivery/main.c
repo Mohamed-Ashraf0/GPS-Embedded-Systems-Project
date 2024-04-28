@@ -22,7 +22,6 @@ void SystemInit(){}
 int main(){
 	int flag1=0;
 	GPIOF_Init();	
-	//UART2_init();
 	MCAL_UART_Init(U2); 
 	while(totalDistance<100){
 	GPS_read ();
