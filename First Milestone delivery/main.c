@@ -21,7 +21,8 @@ double Distance = 0 , totalDistance =0;
 void SystemInit(){}
 int main(){
 	int flag1=0;
-	GPIOF_Init();	
+	enableClock(F);	
+	enableLEDs();
 	MCAL_UART_Init(U2); 
 	while(totalDistance<100){
 	GPS_read ();
