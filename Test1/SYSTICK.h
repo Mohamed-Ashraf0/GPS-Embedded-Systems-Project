@@ -1,5 +1,8 @@
-#include<stdint.h>
-void SysTick_Init(void);
-void SysTick_Wait(uint32_t delay);
-void SysTick_Wait1ms(uint32_t delay);
 
+#ifndef SYSTICK_H_
+#define SYSTICK_H_ 
+#include <stdint.h>
+void SYSTICK_Init(void);
+void SYSTICK_WAIT(uint32_t delay);
+void SysTick_Wait10ms(uint32_t delay);
+#endif
