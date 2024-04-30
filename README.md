@@ -9,7 +9,8 @@ Tracking System using Tiva c and GPS to get the Coordinates.
 
 ## The project is implemented using the following hardware:
 * Tiva-c
-* NEO6 GPS Module  
+* NEO6 GPS Module
+* LCD
 
 
 ##  Contributions :
