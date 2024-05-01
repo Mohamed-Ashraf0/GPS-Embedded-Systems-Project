@@ -1,4 +1,8 @@
-#define NVIC_ST_CTRL_R(*((volatile uint32_t *)0xE000E010))
-#define NVIC_ST_RELOAD_R(*((volatile uint32_t *)0xE000E014)) 
-#define NVIC_ST_CURRENT_R(*((volatile uint32_t *)0xE000E018))
 
+#ifndef SYSTICK_H_
+#define SYSTICK_H_ 
+#include <stdint.h>
+void SYSTICK_Init(void);
+void SYSTICK_WAIT(uint32_t delay);
+void SysTick_Wait10ms(uint32_t delay);
+#endif
