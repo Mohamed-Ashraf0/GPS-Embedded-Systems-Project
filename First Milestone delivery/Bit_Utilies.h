@@ -9,3 +9,4 @@
 #define SET_BIT(reg,val)    reg |= (1<<val)
 
 #define CLR(reg,val)        reg
+#endif

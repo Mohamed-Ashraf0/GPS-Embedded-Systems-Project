@@ -1,8 +1,6 @@
 #include "TM4C123.h"
 #include "Bit_Utilies.h"
-#include<stdint.h>
 #include "LCD.h"
-#include<string.h>
 
 //RS = PD0
 //RW = PD1
@@ -60,25 +58,18 @@ if ((data&0x80) == 0x80){SET_BIT(GPIO_PORTB_DATA_R,0);}
 else {CLR_BIT(GPIO_PORTB_DATA_R,0);}
 }
 void LCD_String_First_line (char* str ,char len){
-					char i ;			
-
-		for( i =0 ;i<len;++i){
-									
-									  LCD_Data(str[i]);
-									}
+    char i ;
+    for( i =0 ;i<len;++i){LCD_Data(str[i]);}
 					
 }
 void LCD_String_Second_line (char* str , char len){
 	char i ;								
-	for ( i = 0; i<len ; ++i){
-									
-									  LCD_Data(str[i]);
-									}
+	for ( i = 0; i<len ; ++i){LCD_Data(str[i]);}
 }
 
 
 void LCD_Init (void){
-LCD_CMD(0x38);        //8-BIT mode utilising 16 coloumns 2 rows
+LCD_CMD(0x38);        //8-BIT mode utilising 16 columns 2 rows
 LCD_CMD(0x06);        //auto incrementing the cursor when it 	prints data in current line
 LCD_CMD(0x0C);        //cursor off and display on 
 LCD_CMD(0x01);        // clear 	screen 
