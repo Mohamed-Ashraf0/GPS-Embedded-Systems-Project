@@ -21,28 +21,32 @@ double deltaLong;
 double a;
 double c ;
 double distance;
-
 double to_degree(double angle) 
 {
    short degree = angle / 100;
    float minuite = angle - degree * 100.0;
    return degree + minuite / 60.0;
 }
+
 double to_radian(double angle)
 {
    return angle * (3.14159265358979323846 / 180.0);
 }
-double computeDistance(double currentlat, currentlong, previouslat, previouslong)
+
+double computeDistance(double lat1, double long1, double lat2, double long2)
 {
-   currentlat = to_radian(to_degree(currentlat));
-   currentlong = to_radian(to_degree(currentlong));
-   previouslat = to_radian(to_degree(previouslat));
-   previouslong = to_radian(to_degree(previouslong));
-   deltaLat = (previouslat) - (currentlat);
-    deltaLong = previouslong - currentlong;
-    a = pow(sin(deltaLat / 2), 2) + cos(currentlat) * cos(previouslat) * pow(sin(deltaLong / 2), 2);
+   lat1 = to_radian(to_degree(lat1));
+   long1 = to_radian(to_degree(long1));
+   lat2 = to_radian(to_degree(lat2));
+   long2 = to_radian(to_degree(long2));
+   deltaLat = (lat2) - (lat1);
+    deltaLong = long2 - long1;
+    a = pow(sin(deltaLat / 2), 2) + cos(lat1) * cos(lat2) * pow(sin(deltaLong / 2), 2);
    c = 2 * atan2(sqrt(a), sqrt(1 - a));
     distance = (6371000 * c);
+		if(distance < 0.6){
+			return 0;
+		}
    return distance;
 }
 
@@ -84,5 +88,7 @@ void GPS_read (){
      currentLat = strtofloat(Lat);
     currentLong = strtofloat(longi);
     if(currentLat>0 && currentLong>0){break;}
-    }
-    }
+     }
+  }
+}
+
