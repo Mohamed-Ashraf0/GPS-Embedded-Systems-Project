@@ -42,4 +42,10 @@ Tracking System using Tiva c and GPS to get the Coordinates.
   
  #### NVICs:
 - yahya ahmed aboamer                         2101424
-            
+
+ #### eeprom:
+- Mohamed Ashraf Mohamed Mahmoud Elzahawy    2101405
+- Seifalla Ehab Mohamed Aziz Bayoumy         2100619
+
+ #### Python script :
+- Abdelrahman Taha Mohamed                   2100464            
