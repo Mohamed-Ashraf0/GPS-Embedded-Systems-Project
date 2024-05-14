@@ -12,6 +12,7 @@ Tracking System using Tiva c and GPS to get the Coordinates.
 * Tiva-c
 * NEO6 GPS Module
 * LCD
+* TTL
 
 
 ##  Contributions :
