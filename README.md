@@ -17,6 +17,7 @@ Tracking System using Tiva c and GPS to get the Coordinates.
 ##  Contributions :
 
 #### Main : 
+- Mohamed Ashraf Mohamed Mahmoud Elzahawy    2101405
 - Ahmed essam alsaid                         2101355
 
 #### GPS :
@@ -27,10 +28,12 @@ Tracking System using Tiva c and GPS to get the Coordinates.
 
 #### UART:
 - Seifalla Ehab Mohamed Aziz Bayoumy         2100619
-       
+- yahya ahmed aboamer                        2101424
+     
 #### LCD:
 - Mohammed Khaled Mohamed                    2101103        
-
+- hussam elsayed mohamed                     2101852
+  
 #### arrtofloat:
 - Omar Khairy Mohamed Fayed                  2101552    
 
@@ -44,8 +47,8 @@ Tracking System using Tiva c and GPS to get the Coordinates.
 - yahya ahmed aboamer                         2101424
 
  #### eeprom:
-- Mohamed Ashraf Mohamed Mahmoud Elzahawy    2101405
 - Seifalla Ehab Mohamed Aziz Bayoumy         2100619
 
  #### Python script :
-- Abdelrahman Taha Mohamed                   2100464            
+- Abdelrahman Taha Mohamed                   2100464
+- Omar Khairy Mohamed Fayed                  2101552         
