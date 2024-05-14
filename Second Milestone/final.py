@@ -1,15 +1,5 @@
 import folium
 import serial
-#ser = serial.Serial("/dev/pts/3")
-#ser.open()
-#input = []
-#i=0
-#x = ""
-#for i in range(4):
-#    if(ser.read(1) == 'U'):
-#        x += ser.read(1).encode('utf-8')
-
-#print(x)
 out = open("outt.txt", 'w')
 ser = serial.Serial('/dev/ttyUSB0')
 def read_until_char(serial_port, char):
@@ -50,9 +40,7 @@ def main():
     serial_port = '/dev/ttyUSB0'  # Specify the serial port here
     print("serial port done \n")
     ser.write(b'U')
-    #read_until_char(serial_port, 'U')  # Wait for 'U'
     print("Done U \n")
-    # Read input until 'L' is received (excluding 'L')
     res = ""
     while(1):
         lat_str = ''
