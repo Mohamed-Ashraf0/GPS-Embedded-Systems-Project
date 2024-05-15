@@ -2,6 +2,9 @@
 #define UART_CONFIG_H
 #include <stdint.h>
 
+
+
+
 typedef struct {
     volatile uint32_t  DR; /* UART DATA recieve */
     volatile uint32_t ERROR_RX_TX;
@@ -35,7 +38,9 @@ typedef struct {
 
 void uint8_UART_config (UART_config_t * uartNumber);
 uint8_t struct_UART_recieveByte(UART_config_t * uartConfigNum);
+void void_UART_sendByte(uint8_t data, UART_config_t * uartConfigNum);
 int8_t UART_receiveString(char *Str, UART_config_t * uartConfigNum);
+void UART_sendString(char* str,uint8_t breakChar ,UART_config_t * uartConfigNum);
 
 
 
